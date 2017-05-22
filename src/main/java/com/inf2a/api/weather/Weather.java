@@ -1,9 +1,6 @@
-package main.java;
+package main.java.com.inf2a.api.weather;
 
-/**
- * Created by basva on 2-5-2017.
- */
-
+import main.java.com.inf2a.api.weather.JsonParser;
 import org.json.JSONException;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -37,7 +34,7 @@ public class Weather {
     */
     @Path("/weather/{city-name}/{units}")
     @GET
-    public javax.ws.rs.core.Response weather(@PathParam("city-name") String cityName, @PathParam("units") String units) throws JSONException
+    public Response weather(@PathParam("city-name") String cityName, @PathParam("units") String units) throws JSONException
     {
         //Check if cityname and units exist in URL.
         if(cityName == null || cityName.trim().length() == 0)

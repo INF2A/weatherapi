@@ -1,4 +1,4 @@
-package main.java;
+package main.java.com.inf2a.api.weather;
 
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
